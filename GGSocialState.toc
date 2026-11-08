@@ -24,4 +24,4 @@
 embeds.xml
 locale.xml
 GGSocialState.lua
-
+## X-License: GPL-3.0
