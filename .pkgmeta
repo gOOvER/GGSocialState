@@ -1,33 +1,55 @@
-package-as: broker_gg_socialstate
+package-as: GGSocialState
+enable-nolib-creation: yes
+enable-toc-creation: yes
 
 externals:
-  Libs/LibStub:
-    url: svn://svn.wowace.com/wow/libstub/mainline/trunk
-  Libs/CallbackHandler-1.0:
-    url: svn://svn.wowace.com/wow/callbackhandler/mainline/trunk/CallbackHandler-1.0
-  Libs/AceConfig-3.0:
-    url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceConfig-3.0
-  Libs/AceEvent-3.0:
-    url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceEvent-3.0
-  Libs/AceDB-3.0:
-    url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceDB-3.0
-  Libs/AceGUI-3.0:
-    url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceGUI-3.0
-  Libs/AceAddon-3.0:
-    url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceAddon-3.0
-  Libs/AceLocale-3.0:
-    url: svn://svn.wowace.com/wow/ace3/mainline/trunk/AceLocale-3.0
-  Libs/LibDataBroker-1.1:
-    url: git://git.wowace.com/wow/libdatabroker-1-1/mainline.git
-    tag: v1.1.4
-  Libs/LibDBIcon-1.0:
-    url: svn://svn.wowace.com/wow/libdbicon-1-0/mainline/trunk/LibDBIcon-1.0
-  Libs/LibQTip-1.0:
-    url: svn://svn.wowace.com/wow/libqtip-1-0/mainline/trunk
-  Libs/LibDialog-1.0:
-    url: http://hg.wowace.com/wow/libdialog-1-0/mainline
+  # Ace3 (GitHub: WoWUIDev/Ace3)
+  libs/LibStub:
+    url: https://github.com/WoWUIDev/Ace3
+    path: LibStub
+  libs/CallbackHandler-1.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: CallbackHandler-1.0
+  libs/AceAddon-3.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: AceAddon-3.0
+  libs/AceEvent-3.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: AceEvent-3.0
+  libs/AceDB-3.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: AceDB-3.0
+  libs/AceGUI-3.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: AceGUI-3.0
+  libs/AceConfig-3.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: AceConfig-3.0
+  libs/AceLocale-3.0:
+    url: https://github.com/WoWUIDev/Ace3
+    path: AceLocale-3.0
 
+  # GitHub-hosted External Libraries
+  libs/LibDataBroker-1.1:
+    url: https://github.com/tekkub/libdatabroker-1-1
+  libs/LibQTip-1.0:
+    url: https://github.com/Torhal/LibQTip-1.0
 
-enable-nolib-creation: yes
+  # WowAce-hosted External Libraries (no official GitHub upstream)
+  libs/LibDBIcon-1.0:
+    url: https://repos.wowace.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0
 
-license-output: LICENSE.txt
+manual-changelog: CHANGELOG.md
+
+ignore:
+  - .github
+  - .gitignore
+  - .gitattributes
+  - .luacheckrc
+  - .pkgmeta
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - LICENSE.txt
+  - libs/LibQTip-1.0/LibQTip-1.0.toc
+  - libs/LibQTip-1.0/LibStub

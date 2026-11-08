@@ -1,0 +1,27 @@
+## Interface: 11508, 11509, 16001, 20505, 20506, 30405, 38002, 40402, 50503, 50504, 120001, 120007, 120100, 120105, 120107
+## Interface-Retail: 120001, 120007, 120100, 120105, 120107
+## Interface-Classic: 11508, 11509, 16001
+## Interface-BCC: 20505, 20506
+## Interface-Wrath: 30405, 38002
+## Interface-Cata: 40402
+## Interface-Mists: 50503, 50504
+## Title: GGSocialState |cff00aa002.0.0|r
+## Notes: LDB Friends, Battle.net & Guild list viewer with GuildGreet integration
+## Notes-deDE: LDB-Anzeige für Freundes-, Battle.net- und Gildenliste mit GuildGreet-Integration
+## Author: Luzisto, gOOvER
+## Version: 2.0.0
+## X-Date: 2026-11-08
+## Category: Guild
+## X-Category: Guild
+## X-Website: https://github.com/gOOvER/GGSocialState
+## IconTexture: Interface\Icons\INV_Drink_08
+## AddonCompartmentFunc: GGSocialState_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: GGSocialState_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: GGSocialState_OnAddonCompartmentLeave
+## SavedVariables: GGSocialStateDB
+## OptionalDeps: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibQTip-1.0, GuildGreet, GuildGreet-Extended, ElvUI
+
+embeds.xml
+locale.xml
+GGSocialState.lua
+
